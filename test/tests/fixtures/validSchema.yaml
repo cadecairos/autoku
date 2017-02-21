@@ -39,8 +39,8 @@ domains:
   - mydomain.example.com
 
 sni:
-  certificate-chain: "-----BEGIN CERTIFICATE----- ..."
-  private-key: "-----BEGIN RSA PRIVATE KEY----- ..."
+  - certificate-chain: "-----BEGIN CERTIFICATE----- ..."
+    private-key: "-----BEGIN RSA PRIVATE KEY----- ..."
 
 buildpacks:
   - heroku/python

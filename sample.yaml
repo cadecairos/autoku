@@ -1,0 +1,31 @@
+name: change-me
+
+region: us
+
+maintenance: false
+
+stack: cedar-14
+
+configVars:
+
+addons:
+
+collaborators:
+
+features:
+
+formation:
+  web:
+    quantity: 1
+    size: hobby
+
+logDrains:
+
+domains:
+
+sni:
+  certificate-chain: "-----BEGIN CERTIFICATE----- ..."
+  private-key: "-----BEGIN RSA PRIVATE KEY----- ..."
+
+buildpacks:
+  - heroku/python

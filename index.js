@@ -25,7 +25,7 @@ program
 
 // default action is show help
 program
-.command('help', { isDefault: true })
+.command('help', 'display this message', { isDefault: true })
 .action(() => program.help());
 
 program.parse(process.argv);

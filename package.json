@@ -1,6 +1,6 @@
 {
   "name": "autoku",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Version control your Heroku Infrastructure",
   "main": "index.js",
   "scripts": {

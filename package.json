@@ -8,8 +8,8 @@
   },
   "author": "Christopher De Cairos <chris@chrisdecairos.ca>",
   "license": "MIT",
-  "homepage": "https://gitlab.com/cadecairos/autoku",
-  "bugs": "https://gitlab.com/cadecairos/autoku/issues",
+  "homepage": "https://github.com/cadecairos/autoku",
+  "bugs": "https://github.com/cadecairos/autoku/issues",
   "keywords": [
     "heroku",
     "configuration",

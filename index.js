@@ -1,9 +1,9 @@
-import 'babel-polyfill'
+#!/bin/env node
 
-import program     from 'commander';
-import deploy      from './lib/autoku';
-import checkSchema from './lib/checkSchema';
-import { version } from './package.json';
+let program        = require('commander');
+let deploy         = require('./lib/autoku');
+let checkSchema    = require('./lib/checkSchema');
+let { version }    = require('./package.json');
 
 program
 .version(version);
@@ -25,7 +25,8 @@ program
 
 // default action is show help
 program
-.command('help', 'display this message', { isDefault: true })
+.command('help', { isDefault: true })
+.description('Print this help message')
 .action(() => program.help());
 
 program.parse(process.argv);

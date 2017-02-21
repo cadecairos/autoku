@@ -1,0 +1,46 @@
+name: lilybugyo
+
+region: us
+
+maintenance: false
+
+stack: cedar-14
+
+configVars:
+  DATABASE_URL: postgres://user:pass@localhost:5432/data
+  REDIS_URL: redis://authstring@localhost:6379
+  OTHER_SETTING: 9001
+
+addons:
+  "heroku-postgresql": "hobby-dev"
+  "heroku-redis": "hobby-dev"
+  "logentries": "le_tryit"
+
+collaborators:
+  - dude@example.com
+
+features:
+  - log-runtime-metrics
+  - preboot
+  - http-session-affinity
+
+formation:
+  web:
+    quantity: 1
+    size: hobby
+  worker:
+    quantity: 1
+    size: hobby
+
+logDrains:
+  - https://example.com:7000
+
+domains:
+  - mydomain.example.com
+
+sni:
+  certificate-chain: "-----BEGIN CERTIFICATE----- ..."
+  private-key: "-----BEGIN RSA PRIVATE KEY----- ..."
+
+buildpacks:
+  - heroku/python

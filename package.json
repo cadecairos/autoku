@@ -4,7 +4,7 @@
   "description": "Version control your Heroku Infrastructure",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/init.js --compilers js:babel-core/register"
+    "test": "mocha test/index"
   },
   "author": "Christopher De Cairos <chris@chrisdecairos.ca>",
   "license": "MIT",

@@ -1,9 +1,9 @@
-import YAML from 'yamljs';
-import Promise from 'bluebird';
-import chai from 'chai';
+const YAML    = require('yamljs');
+const Promise = require('bluebird');
+const chai    = require('chai');
 
-import validateSchema from '../../lib/validateSchema';
-import { clone } from '../utils';
+const validateSchema = require('../../lib/validateSchema');
+const { clone }      = require('../utils');
 
 const { expect, assert } = chai;
 

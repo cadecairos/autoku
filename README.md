@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cadecairos/autoku.svg?branch=master)](https://travis-ci.org/cadecairos/autoku)
+
 # Autoku
 
 ## Version control your Heroku infrastructure using YAML
